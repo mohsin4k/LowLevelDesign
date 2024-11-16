@@ -3,6 +3,14 @@ package model;
 public class ParkingLot{
 
 	private CarParking cars; 
+	private BikeParking bikes; 
+	private BicycleParking bicycles; 
+	
+	private int entryGates;
+	private int exitGates; 
+	
+	private String name; 
+	
 	public CarParking getCars() {
 		return cars;
 	}
@@ -67,15 +75,6 @@ public class ParkingLot{
 	public void setName(String name) {
 		this.name = name;
 	}
-
-
-	private BikeParking bikes; 
-	private BicycleParking bicycles; 
-	
-	private int entryGates;
-	private int exitGates; 
-	
-	private String name; 
 	
 
 	public ParkingLot(String name, CarParking cars, BikeParking bikes, BicycleParking bicycles, int entryGates, int exitGates) {
